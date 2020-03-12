@@ -12,13 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('tem');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('employees','EmployeeController');
-Route::resource('productts','ProducttController');
 Route::resource('cvs','CvController');
 
